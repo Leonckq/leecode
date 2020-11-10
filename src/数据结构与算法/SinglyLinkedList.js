@@ -18,7 +18,7 @@ class LinkedList {
   append(element) {
     const newNode = new Node(element)
     let currentNode = this.head
-    while(currentNode.next) {
+    while (currentNode.next) {
       currentNode = currentNode.next
     }
     currentNode.next = newNode
@@ -26,7 +26,7 @@ class LinkedList {
 
   findByValue(item) {
     let currentNode = this.head.next
-    while(currentNode !== null && currentNode.element !== item) {
+    while (currentNode !== null && currentNode.element !== item) {
       currentNode = currentNode.next
     }
     console.log(currentNode)
@@ -35,11 +35,11 @@ class LinkedList {
 
   // 根据index查找节点，下标从0开始
   findByIndex(index) {
-    if (index<0) return -1
+    if (index < 0) return -1
     let currentNode = this.head.next
     let flag = 0
     debugger
-    while(flag !== index && currentNode !== null) {
+    while (flag !== index && currentNode !== null) {
       currentNode = currentNode.next
       flag++
     }
@@ -60,7 +60,7 @@ class LinkedList {
     let currentNode = this.findByValue(oldItem)
     if (currentNode === -1) {
       console.log('未找到插入位置')
-      return 
+      return
     }
     const newNode = new Node(newItem)
     newNode.next = currentNode.next
@@ -69,16 +69,16 @@ class LinkedList {
   // 查找前一个
   findPrev(item) {
     let currentNode = this.head
-    while(currentNode.next !== null && currentNode.next.element !== item) {
+    while (currentNode.next !== null && currentNode.next.element !== item) {
       currentNode = currentNode.next
     }
-    if ( currentNode.next === null ) {
+    if (currentNode.next === null) {
       return -1
     }
     return currentNode
   }
   // 根据值删除
-  remove (item) {
+  remove(item) {
     let currentNode = this.findPrev(item)
     if (currentNode === -1) {
       console.log('未找到元素')
@@ -87,7 +87,7 @@ class LinkedList {
     currentNode.next = currentNode.next.next
   }
   display() {
-    let currentNode = this.head.next// 忽略头指针
+    let currentNode = this.head.next // 忽略头指针
     while (currentNode !== null) {
       console.log(currentNode.element)
       currentNode = currentNode.next
@@ -104,7 +104,6 @@ console.log('-------------insert item------------')
 LList.insert('qian', 'chen') // 首元素后插入
 LList.insert('zhou', 'zhao') // 尾元素后插入
 LList.display() // chen -> qian -> curry -> sang -> zhao -> zhou
-
 
 console.log('-------------remove item------------')
 LList.remove('curry')

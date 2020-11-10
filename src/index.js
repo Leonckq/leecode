@@ -14,7 +14,6 @@
 // require('./数据结构与算法/queue/QueueBasedOnLinkedList')
 // require('./components/职责链/Chain')
 
-
 // require('./数据结构与算法/stack/StackBasedOnLinkedList')
 
 // require('./components/装饰着模式')
