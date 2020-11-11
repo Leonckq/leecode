@@ -48,12 +48,6 @@
 //     console.log(res)
 // }
 
-
-
-
-
-
-
 class Node {
   constructor(ele) {
     this.element = ele
@@ -89,9 +83,6 @@ class QueueBasedOnLinkedList {
   }
 }
 
-
-
-
 // Test
 const newQueue = new QueueBasedOnLinkedList()
 // 插入元素
@@ -102,45 +93,6 @@ newQueue.enqueue(3)
 let res = 0
 console.log('-------获取dequeue元素------')
 while (res !== -1) {
-    res = newQueue.dequeue()
-    console.log(res)
+  res = newQueue.dequeue()
+  console.log(res)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
