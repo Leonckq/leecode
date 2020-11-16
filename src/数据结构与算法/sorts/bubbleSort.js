@@ -1,30 +1,8 @@
-const arr = [
-  1,
-  4,
-  6,
-  786,
-  85,
-  4,
-  346,
-  65,
-  3,
-  254,
-  676,
-  43,
-  23,
-  67,
-  8,
-  64,
-  34,
-  67,
-  4323,
-  233,
-  543
-]
+const arr = [1, 4, 6, 786, 85, 4, 346, 65, 3, 254, 676, 43, 23, 67, 8, 64, 34, 67, 4323, 233, 543]
 
 // const a = new Date().getTime()
 // console.log(a)
-const bubble = arr => {
+const bubble = (arr) => {
   if (arr.length <= 1) {
     return arr
   }
@@ -67,7 +45,7 @@ const bubble = arr => {
 //   return arr
 // }
 
-const cha = value => {
+const cha = (value) => {
   if (value.length <= 1) {
     return value
   }
@@ -89,7 +67,7 @@ const cha = value => {
 
 // console.log(cha(arr))
 
-const chaa = value => {
+const chaa = (value) => {
   if (value.length <= 1) {
     return value
   }
@@ -151,7 +129,7 @@ const chaa = value => {
 
 // console.log(insertSort(arr))
 
-const chose = value => {
+const chose = (value) => {
   if (value.length <= 1) {
     return value
   }
@@ -169,6 +147,5 @@ const chose = value => {
   }
   return arr
 }
-
 
 console.log(chose(arr))
