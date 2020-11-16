@@ -21,8 +21,9 @@
 
 // require('./数据结构与算法/sorts/bubbleSort')
 // require('./数据结构与算法/sorts/12.1归并排序')
-require('./数据结构与算法/sorts/1.js')
+// require('./数据结构与算法/sorts/1.js')
+require('./数据结构与算法/12_sorts/guibingSort')
 
-require('./components/1.单例模式')
+// require('./components/1.单例模式')
 // require('./components/代理模式')
 // require('./components/有效的山脉数组')
