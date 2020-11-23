@@ -7,7 +7,7 @@ const quickSort = (arr, left, right) => {
     let pivot = right
     const partitionIndex = partition(arr, pivot, left, right)
     quickSort(arr, left, partitionIndex - 1 < left ? left : partitionIndex - 1)
-    quickSort(arr, partitionIndex - 1 > right ? right : partitionIndex + 1, right)
+    quickSort(arr, partitionIndex + 1 > right ? right : partitionIndex + 1, right)
   }
 }
 
