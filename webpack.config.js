@@ -5,7 +5,7 @@ module.exports = {
   mode: 'development',
   output: {
     filename: 'bundle.[hash:6].js',
-    path: path.resolve(__dirname,'dist')
+    path: path.resolve(__dirname, 'dist')
   },
   entry: './src/index.js',
   module: {
@@ -23,7 +23,7 @@ module.exports = {
   },
   devtool: 'source-map',
   resolve: {
-    modules: [ path.resolve('node_modules') ],
+    modules: [path.resolve('node_modules')],
     extensions: ['.js', '.jsx', '.tsx', '.css', '.json']
   },
   devServer: {

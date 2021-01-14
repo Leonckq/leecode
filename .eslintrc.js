@@ -22,6 +22,7 @@ module.exports = {
   plugins: [
     'react',
   ],
+  "parser": "babel-eslint",
   rules: {
     "prettier/prettier": 1,
   }
